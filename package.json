@@ -1,0 +1,23 @@
+{
+  "name": "remote-file-parser",
+  "version": "1.0.0",
+  "description": "Parse remote files and return their body",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PartnerComm/remote-file-parser.git"
+  },
+  "author": "Phil Palmieri / PartnerComm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PartnerComm/remote-file-parser/issues"
+  },
+  "homepage": "https://github.com/PartnerComm/remote-file-parser#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
