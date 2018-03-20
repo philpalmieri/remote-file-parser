@@ -1,0 +1,36 @@
+version: '2'
+services:
+    # tika:
+    #   build:
+    #       context: .
+    #       dockerfile: ./tikaserver/Dockerfile
+    #   container_name: tika
+    #   ports:
+    #     - "9998:9998"
+    #   networks:
+    #     - private
+    #     - public
+    fileparser:
+      build:
+          context: .
+          dockerfile: ./Dockerfile
+      # user: "node"
+      working_dir: /home/node/app
+      environment:
+        - NODE_ENV=production
+      volumes:
+        - ./:/home/node/app
+      expose:
+        - "3000"
+      ports:
+        - "8081:3000"
+      command: "nodemon start"
+      networks:
+      - public
+      - private
+
+networks:
+  public:
+    driver: bridge
+  private:
+    driver: bridge
