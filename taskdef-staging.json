@@ -1,0 +1,19 @@
+{
+  "containerDefinitions": [
+    {
+      "portMappings": [
+        {
+          "hostPort": 8081,
+          "containerPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "name": "file-reader-staging",
+      "image": "555246499424.dkr.ecr.us-east-2.amazonaws.com/file-reader-staging",
+      "cpu": 0,
+      "memoryReservation": 64
+    }
+  ],
+  "family": "file-reader-staging"
+}
