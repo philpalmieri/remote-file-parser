@@ -1,3 +1,0 @@
-PUT http://localhost:9998/tika HTTP/1.1
-Accept: text/plain
-fileUrl: https://www.idee.org/Georgia_opposition_NATO-Eng-F.doc
