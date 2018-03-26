@@ -18,6 +18,7 @@
   "homepage": "https://github.com/PartnerComm/remote-file-parser#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "textract": "^2.2.0"
   }
 }

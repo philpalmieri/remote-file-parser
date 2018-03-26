@@ -1,11 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const bodyParser = require('body-parser');
-const http = require('http');
-const fetch = require("node-fetch");
-const fs = require('fs');
-const url = require("url");
-const path = require("path");
 const textract = require('textract');
 
 router.use(bodyParser.urlencoded({ extended: true }));
