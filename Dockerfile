@@ -17,3 +17,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 EXPOSE 3000
 RUN npm install -g nodemon
+WORKDIR /home/node/app
+COPY ./ /home/node/app
+CMD [ "node", "index.js" ]
