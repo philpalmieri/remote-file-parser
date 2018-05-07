@@ -2,9 +2,9 @@
 Read and parse remote files
 
 # Staging Environment:
-* URL: `reader.pcommstaging.com`
+* URL: `url`
 * Testing:
-  * `curl -H "Content-Type: application/json" -X POST -d '{"file":"https://www.cmu.edu/blackboard/files/evaluate/tests-example.xls"}' reader.pcommstaging.com/parse`
+  * `curl -H "Content-Type: application/json" -X POST -d '{"file":"https://www.cmu.edu/blackboard/files/evaluate/tests-example.xls"}' reader.com/parse`
 
 # Local Dev Setup:
 * From root directory:
